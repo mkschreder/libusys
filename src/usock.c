@@ -91,7 +91,7 @@ static int usock_inet(int type, const char *host, const char *service, int sockt
 			| ((type & USOCK_NUMERIC) ? AI_NUMERICHOST : 0),
 	};
 	int sock = -1;
-
+	
 	if (getaddrinfo(host, service, &hints, &result))
 		return -1;
 

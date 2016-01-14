@@ -11,7 +11,7 @@ SOURCES=\
 	src/ustream-fd.c \
 	src/ustream.c 
 
-INSTALL_PREFIX=/usr
+INSTALL_PREFIX=$(DESTDIR)/usr/
 
 OBJECTS=$(addprefix $(BUILD_DIR)/,$(patsubst %.c,%.o,$(SOURCES)))
 

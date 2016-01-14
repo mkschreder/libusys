@@ -16,6 +16,10 @@ struct uloop_timeout
 	struct timeval time;
 };
 
+typedef int64_t utick_t; 
+utick_t utick_now(void); 
+static inline bool utick_expired(utick_t t) { return (t - utick_now()) < 0; }
+
 void clock_monotonic(struct timeval *tv); 
 int uloop_timeout_set(struct uloop_timeout *timeout, int msecs);
 int uloop_timeout_cancel(struct uloop_timeout *timeout);

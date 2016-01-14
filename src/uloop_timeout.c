@@ -8,6 +8,14 @@ void clock_monotonic(struct timeval *tv){
 	tv->tv_usec = ts.tv_nsec / 1000;
 }
 
+utick_t utick_now(void){
+	struct timeval time;
+
+	clock_monotonic(&time);
+	
+	return ((utick_t)time.tv_sec) * 1000000L + time.tv_usec; 
+}
+
 int uloop_timeout_set(struct uloop_timeout *self, int msecs){
 	struct timeval *time = &self->time;
 

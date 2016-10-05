@@ -19,8 +19,8 @@
 #ifndef __LIBUBOX_RUNQUEUE_H
 #define __LIBUBOX_RUNQUEUE_H
 
-#include <libutype/list.h>
-#include <libutype/safe_list.h>
+#include <utype/list.h>
+#include <utype/safe_list.h>
 
 #include "uloop.h"
 

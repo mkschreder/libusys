@@ -52,7 +52,7 @@
 #endif
 #include <sys/wait.h>
 
-#include <libutype/list.h>
+#include <utype/list.h>
 
 #include "uloop_timeout.h"
 

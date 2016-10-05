@@ -1,7 +1,7 @@
 #pragma once
 
-#include <libutype/utils.h>
-#include <libutype/list.h>
+#include <utype/utils.h>
+#include <utype/list.h>
 
 struct uloop_timeout; 
 

@@ -2,6 +2,7 @@
 
 #include <utype/utils.h>
 #include <utype/list.h>
+#include "uloop.h"
 
 struct uloop_timeout; 
 

@@ -3,6 +3,7 @@
 #include <utype/utils.h>
 #include <utype/list.h>
 #include "uloop.h"
+#include <sys/time.h>
 
 struct uloop_timeout; 
 

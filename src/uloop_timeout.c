@@ -1,5 +1,6 @@
 #include "uloop_timeout.h"
 #include <time.h>
+#include <sys/time.h>
 
 void clock_monotonic(struct timeval *tv){
 	struct timespec ts;
